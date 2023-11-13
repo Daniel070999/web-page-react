@@ -1,0 +1,7 @@
+.appinfo-termsandconditions-section {
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}

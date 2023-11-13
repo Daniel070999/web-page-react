@@ -1,0 +1,76 @@
+.body-main {
+    background-color: rgb(134, 196, 255);
+    /* background-image: url('https://raw.githubusercontent.com/Daniel070999/Portafolio_personal/main/src/assets/images/home.webp');
+    background-size: cover;
+    background-repeat: no-repeat; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.body-div-left {
+    width: 47vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-img {
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+    animation: animation-home-body-img .5s;
+}
+
+@keyframes animation-home-body-img {
+    from {
+        height: 0px;
+        width: 0px;
+    }
+
+    to {
+        height: 250px;
+        width: 250px;
+    }
+}
+
+.body-div-rigth {
+    width: 47vw;
+    height: 50vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body-main-description {
+    font-size: 18px;
+    color: black;
+}
+
+@media (max-width: 728px) {
+    .body-container {
+        flex-direction: column;
+    }
+
+    .body-div-left {
+        width: 95vw;
+        height: 50vh;
+    }
+
+    .body-div-rigth {
+        width: 90vw;
+        height: 30vh;
+    }
+}
