@@ -1,7 +1,110 @@
 .features-main {
     background-color: aquamarine;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
+}
+
+.feature-row {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-row {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-body-img-one,
+.feature-body-img-three {
+    height: 80%;
+    width: 200px;
+    border-radius: 15px;
+    animation: animation-feature-body-img-one .5s;
+    animation-play-state: paused;
+    transform: translateX(0%);
+}
+
+.feature-body-img-two {
+    height: 80%;
+    width: 200px;
+    border-radius: 15px;
+    animation: animation-feature-body-img-two .5s;
+    animation-play-state: paused;
+    transform: translateX(0%);
+}
+
+@keyframes animation-feature-body-img-one {
+    from {
+        height: 0px;
+        width: 0px;
+        transform: translateX(100%);
+    }
+
+    to {
+        height: 80%;
+        width: 200px;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animation-feature-body-img-two {
+    from {
+        height: 0px;
+        width: 0px;
+        transform: translateX(-100%);
+    }
+
+    to {
+        height: 80%;
+        width: 200px;
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width: 728px) {
+
+    .feature-body-img-one,
+    .feature-body-img-three {
+        height: 50%;
+        width: 150px;
+    }
+
+    .feature-body-img-two {
+        height: 50%;
+        width: 150px;
+    }
+
+    @keyframes animation-feature-body-img-one {
+        from {
+            height: 0px;
+            width: 0px;
+            transform: translateX(100%);
+        }
+
+        to {
+            height: 50%;
+            width: 150px;
+            transform: translateX(0%);
+        }
+    }
+
+    @keyframes animation-feature-body-img-two {
+        from {
+            height: 0px;
+            width: 0px;
+            transform: translateX(-100%);
+        }
+
+        to {
+            height: 50%;
+            width: 150px;
+            transform: translateX(0%);
+        }
+    }
 }

@@ -9,13 +9,13 @@ function WorksModalC(props) {
                 aria-labelledby="contained-modal-title-vcenter" centered>
                 <Modal.Header closeButton>
                     <Modal.Title id="contained-modal-title-vcenter">
-                        Modal heading
+                        {props.viewData.encabezado}
                     </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="modal-body">
-                    <Image className="modal-card-img" src={props.viewImg.img} />
+                    <Image className="modal-card-img" src={props.viewData.imagen} />
                     <p>
-                        Short text descripction
+                        {props.viewData.descripcion}
                     </p>
                 </Modal.Body>
                 <Modal.Footer>

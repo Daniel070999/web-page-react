@@ -23,10 +23,11 @@ function ContactC() {
         <>
             <section id="contactC" className="contact-main">
                 <div className="contacts-div">
-                    <i className="home-contact-description">Otra información relevante.</i>
+                    <i className="home-contact-description">Contact</i>
                 </div>
             </section>
         </>
     )
 }
+
 export default ContactC;

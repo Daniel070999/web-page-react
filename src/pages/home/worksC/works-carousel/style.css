@@ -20,19 +20,24 @@
 
 .works-card-img {
     height: 200px;
-    width: 400px;
+    width: 200px;
+    margin-inline: 50px;
     animation: animation-works-card-img 1s;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 @keyframes animation-works-card-img {
     from {
         height: 0px;
         width: 0px;
+        transform: translateX(100%);
     }
 
     to {
         height: 200px;
-        width: 400px;
+        width: 200px;
+        transform: translateX(0%);
     }
 }
 
@@ -53,21 +58,43 @@
 .works-body-img {
     height: 120px;
     width: 120px;
-    margin-bottom: 50px;
+    margin-inline: 5px;
     border-radius: 15px;
     transition: all .1s linear;
 }
 
 .works-body-img:hover {
     cursor: pointer;
-    background-color: rgb(28, 145, 253);
+    background-color: rgba(128, 128, 128, 0.5);
     transform: translateY(-5px);
 }
 
 .works-row-img {
-    display: flex;
-    justify-self: center;
-    align-items: flex-end;
+    cursor: ew-resize;
+    overflow-x: scroll;
+    white-space: nowrap;
+    padding: 5px;
+    margin-inline: 20vw;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    box-shadow: -1px -5px 48px 4px rgba(0, 0, 0, 0.55) inset;
+    -webkit-box-shadow: -1px -5px 48px 4px rgba(0, 0, 0, 0.55) inset;
+    -moz-box-shadow: -1px -5px 48px 4px rgba(0, 0, 0, 0.55) inset;
+    animation: animation-works-row-img 1s;
+}
+
+@keyframes animation-works-row-img {
+    from {
+        width: 0px;
+        height: 0px;
+        transform: translateY(-100%);
+    }
+
+    to {
+        width: 55%;
+        height: 65%;
+        transform: translateY(0%);
+    }
 }
 
 @media (max-width: 728px) {
@@ -83,5 +110,23 @@
     .works-body-img {
         height: 100px;
         width: 100px;
+    }
+
+    .works-row-img {
+        margin-inline: 10vw;
+    }
+
+    @keyframes animation-works-row-img {
+        from {
+            width: 0px;
+            height: 0px;
+            transform: translateY(-100%);
+        }
+
+        to {
+            width: 78%;
+            height: 55%;
+            transform: translateY(0%);
+        }
     }
 }
