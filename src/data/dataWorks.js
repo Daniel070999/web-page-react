@@ -1,5 +1,6 @@
 const mainProjects = [
     {
+        id_work: '1',
         titulo: 'titulo1',
         descripcion: 'descirpicon del work1',
         imagen: 'https://firebasestorage.googleapis.com/v0/b/portafolio-ab468.appspot.com/o/projects%2Fhdt.webp?alt=media&token=5af77d07-eb04-42b9-a081-c2594d1f1001',
@@ -22,6 +23,7 @@ const mainProjects = [
         ]
     },
     {
+        id_work: '2',
         titulo: 'titulo2',
         descripcion: 'descirpicon del work2',
         imagen: 'https://firebasestorage.googleapis.com/v0/b/portafolio-ab468.appspot.com/o/projects%2Fcyd.webp?alt=media&token=7e0b9306-a13f-4631-a465-31a5453995ee',
@@ -39,6 +41,7 @@ const mainProjects = [
         ]
     },
     {
+        id_work: '3',
         titulo: 'titulo3',
         descripcion: 'descirpicon del work3',
         imagen: 'https://firebasestorage.googleapis.com/v0/b/portafolio-ab468.appspot.com/o/projects%2Fcdm.webp?alt=media&token=d8902c0e-9cae-49fa-a3a0-882a8497b38f',
@@ -66,6 +69,7 @@ const mainProjects = [
         ]
     },
     {
+        id_work: '4',
         titulo: 'titulo4',
         descripcion: 'descirpicon del work4',
         imagen: 'https://firebasestorage.googleapis.com/v0/b/portafolio-ab468.appspot.com/o/projects%2Fpw.webp?alt=media&token=ccaa4b7f-cd44-4830-a233-91251000f891',
@@ -83,6 +87,7 @@ const mainProjects = [
         ]
     },
     {
+        id_work: '5',
         titulo: 'titulo5',
         descripcion: 'descirpicon del work5',
         imagen: 'https://firebasestorage.googleapis.com/v0/b/portafolio-ab468.appspot.com/o/projects%2Fcal.webp?alt=media&token=112a4913-9959-401b-ae85-109e9dc0f956',
@@ -106,6 +111,12 @@ const mainProjects = [
     }
 ];
 
+function getProjectById(_id_work) {
+    const project = mainProjects.find(project => project.id_work === _id_work);
+    return project || null;
+}
+
 export default {
-    mainProjects
+    mainProjects,
+    getProjectById
 }

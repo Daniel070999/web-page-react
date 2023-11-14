@@ -31,4 +31,5 @@ function NavbarC(props) {
         </>
     )
 }
+
 export default NavbarC;

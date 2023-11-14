@@ -1,7 +1,18 @@
 .appinfo-features-section {
     background-color: cadetblue;
+    height: auto;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.appinfo-features-div {
+    width: 300px;
+    margin: 30px;
+}
+
+@media (max-width: 728px) {
+    .appinfo-features-div {
+        width: 80vw;
+    }
 }

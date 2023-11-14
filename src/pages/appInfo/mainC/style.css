@@ -5,3 +5,37 @@
     justify-content: center;
     height: 50vh;
 }
+
+.appinfo-main-img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+    animation: animation-appinfo-main-img .5s;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+@keyframes animation-appinfo-main-img {
+    from {
+        height: 0px;
+        width: 0px;
+    }
+
+    to {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+.appinfo-main-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@media (max-width: 728px) {
+    .appinfo-main-div {
+        flex-direction: column;
+    }
+}

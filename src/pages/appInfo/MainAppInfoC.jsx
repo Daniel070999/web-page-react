@@ -6,20 +6,34 @@ import DescriptionC from "./descriptionC/DescriptionC";
 import MainC from "./mainC/MainC";
 import FeaturesC from "./featuresC/FeaturesC";
 import TermsAndConditionsC from "./termsandconditinosC/TermsAndConditionsC";
+import dataProject from '../../data/dataWorks';
+import infoWorks from "../../data/infoWorks";
 
 function MainAppInfoC() {
+
     let { app } = useParams();
+    const projectWork = dataProject.getProjectById(app);
+    const infoProject = infoWorks.getInfoProjectById(app);
     return (
         <>
             <NavbarC
-                name={app}
+                name={projectWork.titulo}
             />
-            <MainC />
-            <DescriptionC />
-            <FeaturesC />
-            <TermsAndConditionsC />
+            <MainC
+                data={projectWork}
+            />
+            <DescriptionC
+                dataDescription={infoProject.description}
+            />
+            <FeaturesC
+                dataFeatures={infoProject.tools}
+            />
+            <TermsAndConditionsC
+                terms={infoProject.termsandconditions}
+            />
             <FooterC />
         </>
     )
 }
+
 export default MainAppInfoC;

@@ -85,14 +85,10 @@
 
 @keyframes animation-works-row-img {
     from {
-        width: 0px;
-        height: 0px;
         transform: translateY(-100%);
     }
 
     to {
-        width: 55%;
-        height: 65%;
         transform: translateY(0%);
     }
 }
@@ -118,14 +114,10 @@
 
     @keyframes animation-works-row-img {
         from {
-            width: 0px;
-            height: 0px;
             transform: translateY(-100%);
         }
 
         to {
-            width: 78%;
-            height: 55%;
             transform: translateY(0%);
         }
     }

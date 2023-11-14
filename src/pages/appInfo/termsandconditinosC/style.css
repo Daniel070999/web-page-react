@@ -5,3 +5,22 @@
     justify-content: center;
     height: 100vh;
 }
+
+.appinfo-termsandconditions-div {
+    width: 90vw;
+    height: 80vh;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.appinfo-termsandconditions-p {
+    overflow-y: scroll;
+    margin: 30px;
+    text-align: justify;
+}

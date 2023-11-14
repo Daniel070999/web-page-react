@@ -25,7 +25,7 @@ function WorksCarouselC(props) {
                             <br />
                             <div className="works-buttons">
                                 <Button style={{ marginInline: "5px" }} variant="primary">View project</Button>
-                                <Button style={{ marginInline: "5px" }} variant="primary" href={`/appinfo/${props.project.titulo}`}>More Info</Button>
+                                <Button style={{ marginInline: "5px" }} variant="primary" href={`/appinfo/${props.project.id_work}`}>More Info</Button>
                             </div>
                         </div>
                     </div>

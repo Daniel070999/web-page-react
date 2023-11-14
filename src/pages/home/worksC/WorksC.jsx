@@ -2,7 +2,7 @@ import React from "react";
 import './style.css';
 import { Carousel } from "react-bootstrap";
 import WorksCarouselC from "./works-carousel/WorksCarouselC";
-import data from './dataWorks';
+import data from '../../../data/dataWorks';
 
 function WorksC() {
 
