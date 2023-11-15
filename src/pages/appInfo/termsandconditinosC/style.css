@@ -24,3 +24,23 @@
     margin: 30px;
     text-align: justify;
 }
+
+@keyframes animation-appinfo-termsandconditions-div {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animation-appinfo-termsandconditions-div-reverse {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

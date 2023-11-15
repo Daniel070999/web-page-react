@@ -4,6 +4,7 @@ import { Button, Row, Image } from "react-bootstrap";
 import WorksModalC from "../works-modal/WorksModalC";
 
 function WorksCarouselC(props) {
+
     const [modalShow, setModalShow] = useState(false);
     const [infoData, setInfoImb] = useState({});
 
@@ -11,6 +12,7 @@ function WorksCarouselC(props) {
         setInfoImb(getData.data);
         setModalShow(verify);
     }
+
     return (
         <>
             <section className="main-slide">
@@ -44,4 +46,5 @@ function WorksCarouselC(props) {
         </>
     )
 }
+
 export default WorksCarouselC;

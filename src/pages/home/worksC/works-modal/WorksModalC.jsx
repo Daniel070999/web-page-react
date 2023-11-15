@@ -3,6 +3,7 @@ import { Button, Image, Modal } from "react-bootstrap";
 import './style.css';
 
 function WorksModalC(props) {
+
     return (
         <>
             <Modal show={props.show} onHide={props.onHide} size="sm"
@@ -26,4 +27,5 @@ function WorksModalC(props) {
         </>
     )
 }
+
 export default WorksModalC;

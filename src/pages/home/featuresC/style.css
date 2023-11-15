@@ -5,19 +5,22 @@
     align-items: center;
     justify-content: center;
     padding: 25px;
-    height: 110vh;
+    height: auto;
 }
 
 .feature-row {
     height: 100%;
     width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.feature-row {
-    display: flex;
+.feature-col {
+    display: grid;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -26,45 +29,51 @@
     height: 90%;
     width: 200px;
     border-radius: 15px;
-    animation: animation-feature-body-img-one .5s;
-    animation-play-state: paused;
-    transform: translateX(0%);
 }
 
 .feature-body-img-two {
     height: 90%;
     width: 200px;
     border-radius: 15px;
-    animation: animation-feature-body-img-two .5s;
-    animation-play-state: paused;
-    transform: translateX(0%);
 }
 
-@keyframes animation-feature-body-img-one {
+@keyframes animation-feature-body-img-rigth {
     from {
-        height: 0px;
-        width: 0px;
         transform: translateX(100%);
     }
 
     to {
-        height: 90%;
-        width: 200px;
         transform: translateX(0%);
     }
 }
 
-@keyframes animation-feature-body-img-two {
+@keyframes animation-feature-body-img-rigth-reverse {
     from {
-        height: 0px;
-        width: 0px;
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+}
+
+@keyframes animation-feature-body-img-left {
+    from {
         transform: translateX(-100%);
     }
 
     to {
-        height: 90%;
-        width: 200px;
         transform: translateX(0%);
+    }
+}
+
+@keyframes animation-feature-body-img-left-reverse {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
     }
 }
 
@@ -79,33 +88,5 @@
     .feature-body-img-two {
         height: 50%;
         width: 150px;
-    }
-
-    @keyframes animation-feature-body-img-one {
-        from {
-            height: 0px;
-            width: 0px;
-            transform: translateX(100%);
-        }
-
-        to {
-            height: 50%;
-            width: 150px;
-            transform: translateX(0%);
-        }
-    }
-
-    @keyframes animation-feature-body-img-two {
-        from {
-            height: 0px;
-            width: 0px;
-            transform: translateX(-100%);
-        }
-
-        to {
-            height: 50%;
-            width: 150px;
-            transform: translateX(0%);
-        }
     }
 }

@@ -1,8 +1,26 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './style.css';
 import { Card } from "react-bootstrap";
 
 function FeaturesC(props) {
+
+    useEffect(() => {
+        function handleScroll() {
+            const elements = document.querySelectorAll('.appinfo-features-div');
+            elements.forEach((element) => {
+                const elementPosition = element.getBoundingClientRect();
+                if (elementPosition.top < window.innerHeight) {
+                    element.style.animation = 'animation-appinfo-features-div .5s forwards';
+                } else {
+                    element.style.animation = 'animation-appinfo-features-div-reverse .5s forwards';
+                }
+            });
+        }
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
 
     return (
         <>

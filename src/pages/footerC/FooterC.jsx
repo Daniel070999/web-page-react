@@ -5,6 +5,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import { FaFacebookSquare, FaInstagramSquare, FaLinkedin } from 'react-icons/fa';
 
 function FooterC() {
+
     function handleFacebookClick() {
         window.location.href = "https://www.facebook.com/...";
     }
@@ -59,4 +60,5 @@ function FooterC() {
         </>
     )
 }
+
 export default FooterC;

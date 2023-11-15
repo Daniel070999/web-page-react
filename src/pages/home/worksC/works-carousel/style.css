@@ -1,6 +1,6 @@
 .main-slide {
-    height: 70vh;
-    width: 90vw;
+    height: 80vh;
+    width: 90%;
     background-color: rgba(85, 107, 47, 0.5);
     backdrop-filter: blur(5px);
     border-radius: 15px;
@@ -22,7 +22,7 @@
     height: 200px;
     width: 200px;
     margin-inline: 50px;
-    animation: animation-works-card-img 1s;
+    animation: animation-works-card-img 1s forwards;
     background-color: transparent;
     border-color: transparent;
 }
@@ -35,8 +35,6 @@
     }
 
     to {
-        height: 200px;
-        width: 200px;
         transform: translateX(0%);
     }
 }
@@ -74,13 +72,13 @@
     overflow-x: scroll;
     white-space: nowrap;
     padding: 5px;
-    margin-inline: 20vw;
+    margin-inline: 10vw;
     margin-bottom: 30px;
     border-radius: 15px;
     box-shadow: -1px -5px 48px 4px rgba(0, 0, 0, 0.55) inset;
     -webkit-box-shadow: -1px -5px 48px 4px rgba(0, 0, 0, 0.55) inset;
     -moz-box-shadow: -1px -5px 48px 4px rgba(0, 0, 0, 0.55) inset;
-    animation: animation-works-row-img 1s;
+    animation: animation-works-row-img 1s forwards;
 }
 
 @keyframes animation-works-row-img {
@@ -96,7 +94,7 @@
 @media (max-width: 728px) {
     .position-card {
         flex-direction: column;
-        padding-inline: 60px;
+        padding-inline: 0px;
     }
 
     .works-description {
@@ -110,6 +108,11 @@
 
     .works-row-img {
         margin-inline: 10vw;
+    }
+
+    .main-slide {
+        height: 60vh;
+        width: 100%;
     }
 
     @keyframes animation-works-row-img {

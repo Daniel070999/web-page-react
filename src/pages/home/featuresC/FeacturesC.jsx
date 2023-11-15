@@ -4,6 +4,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import img from "../../../images/img.jpeg"
 
 function FeaturesC() {
+
     useEffect(() => {
         function handleScroll() {
             const element1 = document.querySelector('.feature-body-img-one');
@@ -14,13 +15,19 @@ function FeaturesC() {
                 const elementPosition2 = element2.getBoundingClientRect();
                 const elementPosition3 = element3.getBoundingClientRect();
                 if (elementPosition1.top < window.innerHeight) {
-                    element1.style.animationPlayState = 'running';
+                    element1.style.animation = 'animation-feature-body-img-rigth .5s forwards';
+                } else {
+                    element1.style.animation = 'animation-feature-body-img-rigth-reverse .5s forwards';
                 }
                 if (elementPosition2.top < window.innerHeight) {
-                    element2.style.animationPlayState = 'running';
+                    element2.style.animation = 'animation-feature-body-img-left .5s forwards';
+                } else {
+                    element2.style.animation = 'animation-feature-body-img-left-reverse .5s forwards';
                 }
                 if (elementPosition3.top < window.innerHeight) {
-                    element3.style.animationPlayState = 'running';
+                    element3.style.animation = 'animation-feature-body-img-rigth .5s forwards';
+                } else {
+                    element3.style.animation = 'animation-feature-body-img-rigth-reverse .5s forwards';
                 }
             }
         }
@@ -29,12 +36,14 @@ function FeaturesC() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
     return (
         <>
             <section id="featuresC" className="features-main">
                 <Row className="feature-row">
-                    <Col className="feature-row">
-                        description
+                    <Col className="feature-col">
+                        <b>Titulo</b>
+                        <p><i>first description of feature´s section. Example of long text in this area</i></p>
                     </Col>
                     <Col className="feature-row">
                         <Image src={img} thumbnail className="feature-body-img-one" />
@@ -44,13 +53,15 @@ function FeaturesC() {
                     <Col className="feature-row">
                         <Image src={img} thumbnail className="feature-body-img-two" />
                     </Col>
-                    <Col className="feature-row">
-                        description
+                    <Col className="feature-col">
+                        <b>Titulo</b>
+                        <p><i>first description of feature´s section. Example of long text in this area</i></p>
                     </Col>
                 </Row>
                 <Row className="feature-row">
-                    <Col className="feature-row">
-                        description
+                    <Col className="feature-col">
+                        <b>Titulo</b>
+                        <p><i>first description of feature´s section. Example of long text in this area</i></p>
                     </Col>
                     <Col className="feature-row">
                         <Image src={img} thumbnail className="feature-body-img-three" />
@@ -60,4 +71,5 @@ function FeaturesC() {
         </>
     )
 }
+
 export default FeaturesC;

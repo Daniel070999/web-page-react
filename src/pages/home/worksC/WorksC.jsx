@@ -8,9 +8,9 @@ function WorksC() {
 
     return (
         <section id="worksC" className="works-main">
-            <Carousel>
+            <Carousel className="home-carousel">
                 {data.mainProjects.map((project, index) => (
-                    <Carousel.Item key={index} className="works-items">
+                    <Carousel.Item key={index}>
                         <WorksCarouselC project={project} />
                     </Carousel.Item>
                 ))}

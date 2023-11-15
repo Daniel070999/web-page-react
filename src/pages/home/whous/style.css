@@ -1,0 +1,8 @@
+.home-howus-section {
+    background-color: lightblue;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}

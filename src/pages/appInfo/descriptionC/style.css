@@ -3,7 +3,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
+    padding: 50px;
 }
 
 .appinfo-description-div {
@@ -15,4 +16,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: animation-appinfo-description-div .5s forwards;
+}
+
+@keyframes animation-appinfo-description-div {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@media (max-width:728px) {
+    .appinfo-description-div {
+        width: 90vw;
+        height: 40vh;
+    }
 }

@@ -11,6 +11,27 @@
     margin: 30px;
 }
 
+@keyframes animation-appinfo-features-div {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+
+}
+@keyframes animation-appinfo-features-div-reverse {
+    from {
+        transform: translateY(0%);
+    }
+
+    to {
+        transform: translateY(100%);
+    }
+
+}
+
 @media (max-width: 728px) {
     .appinfo-features-div {
         width: 80vw;

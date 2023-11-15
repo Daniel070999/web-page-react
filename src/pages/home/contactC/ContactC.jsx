@@ -9,7 +9,9 @@ function ContactC() {
             if (element) {
                 const elementPosition = element.getBoundingClientRect();
                 if (elementPosition.top < window.innerHeight) {
-                    element.style.animationPlayState = 'running';
+                    element.style.animation = 'animation-contacts-div .5s forwards';
+                } else {
+                    element.style.animation = 'animation-contacts-div-reverse .5s forwards';
                 }
             }
         }

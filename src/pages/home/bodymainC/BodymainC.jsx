@@ -20,4 +20,5 @@ function BodyMainC() {
         </>
     )
 }
+
 export default BodyMainC;
