@@ -1,0 +1,51 @@
+.home-howus-section {
+    background-color: lightblue;
+    height: auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whous-div {
+    width: 47vw;
+    height: 30vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.whous-description {
+    font-size: 18px;
+    color: black;
+}
+
+@media (max-width: 728px) {
+    .whous-div {
+        width: 90vw;
+    }
+}
+
+@keyframes animation-whous-div {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animation-whous-div-reverse {
+    from {
+        transform: translateX(0%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

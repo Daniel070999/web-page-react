@@ -12,16 +12,12 @@ function NavbarC() {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                        <Nav.Link href="#howusC">Who us</Nav.Link>
+                        </Nav>
+                        <Nav>
+                            <Nav.Link href="#aboutusC">Who us</Nav.Link>
                             <Nav.Link href="#featuresC">Features</Nav.Link>
                             <Nav.Link href="#worksC">Works</Nav.Link>
                             <Nav.Link href="#contactC">Contact</Nav.Link>
-                        </Nav>
-                        <Nav>
-                            <Nav.Link href="#deets">More deets</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: auto;
+    height: 70vh;
     padding: 50px;
     background-color: rgb(180, 180, 160);
 }
@@ -22,7 +22,6 @@
     font-size: 1rem;
     color: black;
 }
-
 
 @keyframes animation-contacts-div {
     from {

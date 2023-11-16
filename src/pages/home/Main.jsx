@@ -5,7 +5,7 @@ import FeaturesC from './featuresC/FeacturesC';
 import FooterC from '../footerC/FooterC';
 import ContactC from './contactC/ContactC';
 import WorksC from './worksC/WorksC';
-import WhousC from './whous/WhousC';
+import AboutusC from './aboutusC/AboutusC';
 
 function MainC() {
 
@@ -13,7 +13,7 @@ function MainC() {
     <>
       <NavbarC />
       <BodyMainC />
-      <WhousC />
+      <AboutusC />
       <FeaturesC />
       <WorksC />
       <ContactC />

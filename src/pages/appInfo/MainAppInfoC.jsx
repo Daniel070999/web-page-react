@@ -14,6 +14,7 @@ function MainAppInfoC() {
     let { app } = useParams();
     const projectWork = dataProject.getProjectById(app);
     const infoProject = infoWorks.getInfoProjectById(app);
+
     return (
         <>
             <NavbarC
